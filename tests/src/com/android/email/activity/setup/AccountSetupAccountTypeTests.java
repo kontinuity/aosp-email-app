@@ -76,9 +76,6 @@ public class AccountSetupAccountTypeTests
         View exchangeButton = activity.findViewById(R.id.exchange);
 
         int expected = View.GONE; // Default is hidden
-        //EXCHANGE-REMOVE-SECTION-START
-        expected = View.VISIBLE; // Will be visible if supported.
-        //EXCHANGE-REMOVE-SECTION-END
 
         assertEquals(expected, exchangeButton.getVisibility());
     }
